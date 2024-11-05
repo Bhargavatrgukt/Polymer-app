@@ -117,6 +117,13 @@ footer{
     display: none;
 }
 
+.count{
+    color: #757575;
+    font-size: 12px;
+}
+
+
+
 /* Media Query for Desktop */
 @media (min-width: 765px) {
    .menu-toggle{
