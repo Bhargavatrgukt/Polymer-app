@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+    <title>Home - SHOP</title>
+    <link rel="shortcut icon" sizes="32x32" href="https://shop.polymer-project.org/esm-bundled/images/shop-icon-32.png">
+    <link rel="stylesheet" href="../Styles/reset.css">
+    <link rel="stylesheet" href="../Styles/Home.css">
+    <link rel="stylesheet" href="../Styles/Product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="navbar">
+            <a href="#" class="menu-toggle"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="./Home.html"><h1 class="brand-title">SHOP</h1></a>
+            <a href="./Cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="ul">
+                <div>
+                    <a class="li">Men's Outerwear</a>
+                    <hr class="line">
+                </div>
+                <a class="li" href="./Women-Outwear.html">Ladies Outerwear</a>
+                <a class="li" href="./Men-Tshirts.html">Men's T-Shirts</a>
+                <a class="li" href="./Women-Tshirts.html">Ladies T-Shirts</a>
+            </div>
+        </nav>
+    </header>
+    <main class="body-main">
+           <div class="product-image-container">
+           <img  class="product-image" src="https://shop.polymer-project.org/esm-bundled/data/images/10-15068B.jpg" />
+           </div>
+           <div class="detail">
+            <h1>Men's Tech Shell Full-Zip</h1>
+            <div class="pricy">$50.20</div>
+            <div>
+              <div class="select-container">
+                <label for="sizeLabel">Size</label>
+                <select id="sizeLabel" name="size" >
+                   <option value="XS">XS</option>
+                   <option value="S">S</option>
+                   <option value="M">M</option>
+                   <option value="L">L</option>
+                   <option value="XL">XL</option>
+                </select>
+              </div>
+              <div class="select-container">
+                <label for="QuantityLabel" id="QuantityLabel">Quantity</label>
+                <select id="QuantitySelect" name="size" >
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+                   <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <h2 class="description">Description</h2>
+            <p id="desc">A versatile full-zip that you can wear all day long and even to the gym. This technical shell features moisture-wicking fabric,
+                added stretch and a hidden pocket for your smartphone or media player.&nbsp;
+                <div><br></div>
+                <div id="feat">Features:
+                    </div><div>
+                    <ul id="features">
+                        <li>100% polyester.</li>
+                        <li>Smooth, technical front with textured mesh back.</li>
+                        <li>Drawstring bottom for adjustable fit.</li>
+                        <li>Raglan sleeves.</li>
+                        <li>Available in forest green with the white Google logo embroidered at left chest.</li>
+                    </ul>
+                </div>
+            </p>
+              <div class="shop-btn-container">
+                <button class="shop-btn" href="./Men-Tshirts.html">ADD TO CART</button>
+                </div>
+            </div>
+    </main>
+    <footer class="mobile-btn">
+        <button class="cart-btn">ADD TO CART</button>
+    </footer>
+    <footer class="lg-screen-polymer">
+        <a class="poly" href="">Made by Polymer</a>
+        <button class="demo">Demo Only</button>
+    </footer>
+</body>  
+
+</html>

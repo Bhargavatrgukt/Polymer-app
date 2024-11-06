@@ -1,0 +1,165 @@
+.body-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image-container{
+    
+}
+.product-image{
+    max-height: 100%;
+    width: 100%;
+}
+
+.detail{
+    box-sizing: border-box;
+    margin: 32px 0;
+    padding: 0 24px;
+    width: 100%;
+    max-width: 600px;
+    margin:32px 0px;
+    padding:0px 24px;
+}
+
+h1{
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    color:#202020;
+    font-weight: 500;
+}
+
+.pricy{
+    color: #757575;
+    margin: 12px 0 32px;
+}
+
+
+/* Container for select and label styling */
+.select-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Ensures full width */
+    margin-bottom: 0px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Styling for the select element */
+.select-container select {
+    width: 100%;
+    display: block; /* Ensures it behaves as a block element */
+    font-size: 16px;
+    padding: 16px 24px 16px 65px;
+    margin: 0;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #757575; /* Bottom border */
+    color: #202020;
+    font-weight: 300;
+    background-color: transparent;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.select-container label {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    font-size: 14px;
+    color: #757575;
+    line-height: 16px;
+    pointer-events: none;
+    background-color: white; /* Keeps label readable if over select */
+    padding: 0 4px;
+  }
+
+  .select-container #QuantitySelect{
+    padding: 16px 24px 16px 75px;
+    border-top:none;
+    margin-bottom: 14px;
+  }
+
+  .description{
+    margin: 16px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color:#202020;
+  }
+
+  #desc, #desc * {
+    margin: 6px;
+    color: #757575;
+}
+
+#feat,#features li{
+    margin-left:20px;
+    color: #757575; 
+}
+
+.cart-btn{
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    width: 100%;
+    background-color: transparent;
+
+}
+
+.mobile-btn{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 24px;
+    width: 100%;
+    background-color: #172C50;
+}
+
+.lg-screen-polymer{
+    display: none;
+}
+.shop-btn-container{
+    display: none;
+}
+
+@media(min-width:765px){
+    .mobile-btn{
+        display: none;
+    }
+    .body-main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+   .lg-screen-polymer{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;          /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to true center */
+    margin: 0; /* Remove margins, no longer needed */
+   }
+   .shop-btn-container{
+    display: block;
+    margin-top:20px;
+    margin-left: 15px;
+ /* Adjust to true center */
+   }
+   .shop-btn{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    background-color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 8px 44px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: none;
+   }
+}

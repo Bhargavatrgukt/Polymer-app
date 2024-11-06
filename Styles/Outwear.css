@@ -33,8 +33,9 @@
 
 
 .grid li{
-    flex-basis: 50%;
+   
     max-width: 50%;
+    padding: 10px;
     text-align: center;
 }
 
@@ -46,7 +47,7 @@
 
 .title{
     color: #202020;
-    font-weight: bold;
+    font-weight:800;
   }
   
   .price{
