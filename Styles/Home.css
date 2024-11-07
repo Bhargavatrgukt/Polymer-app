@@ -123,30 +123,56 @@ footer{
     font-size: 12px;
 }
 
-.slide {
-    z-index: 0;
-    position: fixed;
-    left: -256px; /* Hide off-screen */
+
+.ham-items {
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+
+    padding-top: 20px;
+
     top: 0;
-    height: 100vh;
-    width: 256px;
-    background-color: #FFFFFF; /* Adjust color as needed */
-    transition: left 0.3s ease; /* Smooth slide */
-}
-
-/* Show the slide when 'open' class is added */
-.slide.open {
     left: 0;
+    width: 60vw;
+    height: 100vh;
+    background-color: white; 
+   
+    z-index: 100;
+    transform: translateX(-100%); /* Hide menu off-screen */
+    transition: transform 0.3s ease; /* Slide-in effect */
+
+    z-index: 1001;
 }
 
-.slide-ul{
-    list-style-type: none;
-    margin-top:8px;
-}
-
-.slide-li{
-    display: block;
+.ham-items a {
+    color: gray;
     text-decoration: none;
+    padding: 0 16px; 
+    line-height: 40px;
+    display: block; 
+
+    
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 90;
+    display: none; /* Hidden by default */
+
+    z-index: 1001;
+}
+
+.ham-items.active {
+    transform: translateX(0);
+} 
+
+.overlay.active {
+    display: block;
 }
 
 
@@ -205,6 +231,10 @@ footer{
 }
 
 .slide{
+    display: none;
+}
+
+.ham-items{
     display: none;
 }
 

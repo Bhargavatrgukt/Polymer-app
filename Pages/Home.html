@@ -14,7 +14,7 @@
     <header class="header">
         <nav>
             <div class="navbar">
-            <a href="#" class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" class="menu-toggle" id="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></a>
             <a href=""><h1 class="brand-title">SHOP</h1></a>
             <a href="../Pages/Cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
@@ -26,6 +26,17 @@
             </div>
         </nav>
     </header>
+    <div class="overlay" onclick="toggleMenu()">
+     <!-- Overlay for dimming effect -->
+
+    <!-- For Hamburger Items -->
+
+    <div class="ham-items">
+        <a href="./Men-Outerwear.html">Men's Outerwear</a>
+        <a href="./Women-Outwear.html">Ladies Outerwear</a>
+        <a href="./Men-Tshirts.html">Men's T-Shirts</a>
+        <a href="./Women-Tshirts.html">Ladies T-Shirts</a>
+    </div>
     </div>
     <main class="main">
         <div class="item">
@@ -60,7 +71,7 @@
         <a class="poly" href="">Made by Polymer</a>
         <button class="demo">Demo Only</button>
     </footer>
-    <!-- <script src="./script.js"></script> -->
+     <script src="./script.js"></script>
 </body>  
 
 </html>
