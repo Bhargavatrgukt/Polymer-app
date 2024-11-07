@@ -216,6 +216,9 @@ label,
         text-transform: uppercase;
         border-radius: 0;
         outline: none;
+        cursor: pointer;
+        text-decoration: none;
+        color: #202020;
        }
 
        .checkout-box {
